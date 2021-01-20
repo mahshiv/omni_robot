@@ -36,16 +36,16 @@
   </light>
 
 <!-- gui -->
-    <gui fullscreen='0'>
+    <!-- <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose>0 -16 10 0 0.53 1.57</pose>
-        <view_controller>orbit</view_controller>
+        <view_controller>orbit</view_controller> -->
         <!--<track_visual>
             <name>bot1::chassis</name>
         </track_visual>-->
-      </camera>
+      <!-- </camera>
     </gui>
-    
+     -->
 <!-- physics -->
      <physics type='ode'>
       <max_step_size>0.007</max_step_size>
@@ -55,7 +55,7 @@
     </physics>
     
 <!-- The same as model://ground_plane -->
-    <model name='ground_plane'>
+    <!-- <model name='ground_plane'>
       <static>true</static>
       <link name='link'>
         <collision name='collision'>
@@ -67,9 +67,9 @@
           </geometry>
           <surface>
             <friction>
-              <ode>
-                <mu>100</mu>    <!-- set the friction in field model. here is not useful-->
-                <mu2>50</mu2>
+              <ode> -->
+                <!-- <mu>100</mu>-->   <!-- set the friction in field model. here is not useful-->
+                <!-- <mu2>50</mu2>
               </ode>
             </friction>
             <contact>
@@ -101,40 +101,40 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
         <gravity>1</gravity>
-      </link>
-    </model>
+      </link> -->
+    <!-- </model> -->
 
 <!-- RoboCup 2015 MSL Field -->
-    <include>
+    <!-- <include>
         <pose>0 0 0 0 0 0</pose>
         <uri>model://RoboCup15_MSL_Field</uri>
         <name>field</name>
         <static>true</static>
-    </include>
+    </include> -->
 
 <!-- RoboCup 2015 MSL Goal left -->
-    <include>
+    <!-- <include>
         <pose>-9 0 0.01 0 0 3.14 </pose>
         <uri>model://RoboCup15_MSL_Goal</uri>
         <name>left_goal</name>
         <static>true</static>
-    </include>
+    </include> -->
 
 <!-- RoboCup 2015 MSL Goal right -->
-   <include>
+   <!-- <include>
         <pose>9 0 0.01 0 0 0 </pose>
         <uri>model://RoboCup15_MSL_Goal</uri>
         <name>right_goal</name>
         <static>true</static>
-    </include>
+    </include> -->
 
 
 <!-- football -->
-   <include>
+   <!-- <include>
         <pose>-0.5 0.5 0.11 0 0 0 </pose>
         <uri>model://football</uri>
         <name>ball</name>
         <static>true</static>
-    </include>
+    </include> -->
   </world>
 </sdf>
