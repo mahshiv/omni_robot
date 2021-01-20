@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
     <!-- Load joint controller configurations from YAML file to parameter server -->
-    <rosparam file="$(find rob_pkg)/config/spawn_urdf.yaml" command="load"/> 
+    <rosparam file="$(find rob_pkg)/config/football_config.yaml" command="load"/> 
     <!-- load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
     output="screen" ns="/robot" args=" joint_state_controller 
