@@ -161,7 +161,7 @@
 
 
     <link name="camera_link">
-	<origin xyz="${0} ${0} ${camera_z}" rpy="0 0 0" />
+	<origin xyz="${left2_wheel_x} ${left2_wheel_y} ${camera_z}" rpy="0 0 ${M_PI/2 + M_PI/6}" />
       <collision>
         <geometry>
           <box size="${sensor_size} ${sensor_size} ${sensor_size}" />
@@ -188,7 +188,7 @@
     <joint name="camera_joint" type="fixed">
         <parent link="${parent}"/>
         <child link="camera_link"/>
-        <origin xyz="${0} ${0} ${camera_z}" rpy="0 0 0" />
+        <origin xyz="${left2_wheel_x} ${left2_wheel_y} ${camera_z}" rpy="0 0 ${M_PI/2 + M_PI/6}" />
         <axis xyz="1 0 0" />
     </joint>
     
